@@ -1,0 +1,65 @@
+body{
+    background-image: url(./images/MG9.jpeg);
+    background-size: 100%;
+    margin: 0;
+    color: cornsilk;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.topNavBar .logo {
+    font-family: "Hiragino Kaku Gothic Std";
+    font-size: 24px;
+    padding-top: 1px;
+    float: left;
+    text-decoration: none;
+}
+
+.topNavBar .rs{
+    color: #e6686a;
+    margin-right: 4px;
+}
+
+.topNavBar .card{
+    color: #9A9DA2;
+}
+
+.topNavBar{
+    padding:20px 16px 20px 16px;
+}
+
+.topNavBar nav {
+    font-size: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.topNavBar nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.topNavBar nav li{
+    float: right;
+    margin-left: 17px;
+    margin-right: 17px;
+    padding-top: 5px;
+}
+
+.topNavBar nav a{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 5px;
+}
+
+.topNavBar nav li a:hover{
+    border-bottom-color: #DC6465;
+  }
