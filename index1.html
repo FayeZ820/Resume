@@ -100,35 +100,91 @@
         </a>
        </footer> 
    </div>
-   <a href="#" class="button">DOWNLOAD RESUME</a>
-   <p>Hello! I'm Faye.<br>
-     Senior Web Developer specializing in front end development.
+   <p class="downloadResume-wrapper">
+   <a href="#" class="downloadResume">DOWNLOAD RESUME</a>
    </p>
+   <p class="selfIntroduction">
+     Hello! I'm Faye.<br>
+     Senior Web Developer specializing in front end development. Experienced with all
+     stages of the development cycle for dynamic web projects. Well-versed in numerous
+     programming language including JavaScript, SQL, and PHP in project management and
+     customer relations.
+    </p>
  </main>
- <section>
+ <section class="skills">
    <h2>Professional Skills</h2>
-   <ol>
-     <li>HTML &amp; CSS</li>
-     <li>JavaScript</li>
-     <li>JQuery</li>
-     <li>PHP &amp; MySQL</li>
-     <li>WordPress</li>
-     <li>Photoshop</li>
+   <ol class="clearfix"> 
+     <li>
+       <h3>HTML &amp; CSS</h3>
+       <div class="progressBar">
+         <div class="progressing" style="with:90%"></div>
+       </div>
+      </li>
+      <li>
+       <h3>JavaScript</h3>
+       <div class="progressBar">
+         <div class="progressing" style="width: 75%"></div>
+       </div>
+      </li>
+      <li>
+       <h3>JQuery</h3>
+       <div class="progressBar">
+         <div class="progressing"></div>
+       </div>
+      </li>
+      <li>
+       <h3>PHP &amp; MySQL</h3>
+       <div class="progressBar">
+         <div class="progressing" style="width: 88%"></div>
+       </div>
+      </li>
+      <li>
+       <h3>WordPress</h3>
+       <div class="progressBar">
+         <div class="progressing" style="width: 75%"></div>
+       </div>
+      </li>
+      <li>
+       <h3>Photoshop</h3>
+       <div class="progressBar">
+         <div class="progressing" style="width: 55%"></div>
+       </div>
+      </li>
    </ol>
  </section>
- <section>
+ <section class="portfolio">
    <h2>Protfolio</h2>
    <nav>
-   <ol>
-     <li>ALL</li>
-     <li>PHOTOGRAPHY</li>
-     <li>UX DESIGN</li>
+   <ol class="clearfix">
+     <li id="portfolio1">ALL</li>
+     <li id="portfolio2">PHOTOGRAPHY</li>
+     <li id="portfolio3">UX DESIGN</li>
    </ol>
+   <div id="portfolioBar" class="bar state-1">
+     <div class="bar-inner"></div>
+   </div>
    </nav>
-   <div class="jobs">
-      <div class="big"></div>
-      <div class="small"></div>
-      <div class="small"></div>
+   <script>
+    portfolio1.onclick= function(){
+      portfolioBar.className = 'bar state-1'
+    }
+    portfolio2.onclick= function(){
+      portfolioBar.className = 'bar state-2'
+    }
+    portfolio3.onclick= function(){
+      portfolioBar.className = 'bar state-3'
+    }
+   </script>
+   <div class="jobs" style="height: 580px;">
+      <div class="big" style="top: 0; left: 0;">
+        <img src="./images/html.png" alt="html" style="width: 606px; height: 384px;">
+      </div>
+      <div class="small" style="top: 0; left: 645px;">
+        <img src="./images/js.png" alt="js" style="width: 294px; height: 175px;">
+      </div>
+      <div class="small" style="top: 200px; left: 645px;">
+        <img src="./images/php.png" alt="php" style="width: 294px; height: auto;">
+      </div>
     </div>
  </section>
 </body>

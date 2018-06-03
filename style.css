@@ -19,6 +19,14 @@ hr{
     border-top: 1px solid #dedede;
 }
 
+ul,ol{
+    list-style: none;
+}
+
+h1,h2,h3,h4{
+    font-weight: normal;
+}
+
 .clearfix::after{
     content: '';
     display: block;
@@ -104,6 +112,7 @@ hr{
       margin-left: auto;
       margin-right: auto;
       background-color: #ffffff;
+    box-shadow:0px 1px 5px 0px rgba(0,0,0,0.5);
   }
 
 .userCard .welcome{
@@ -186,3 +195,154 @@ hr{
     fill: white;
     vertical-align: top;
 }
+
+body main{
+    margin-top: -340px;
+}
+
+body main .downloadResume-wrapper{
+    text-align: center;
+}
+
+body main .downloadResume{
+    font-size: 14px;
+    line-height: 16px;
+    padding: 21px 55px;
+    border: 1px solid #cdcfd1;
+    background:#ffffff;
+    display: inline-block;
+    border-radius: 2px;
+    color:#3d4451;
+    font-weight: bold;
+    margin: 32px 0;
+    transition: box-shadow 1s;
+}
+
+body main .downloadResume:hover{
+    box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.3);
+}
+
+.selfIntroduction{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #3d4451;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.skills, .portfolio{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 65px;
+}
+
+.skills h2,
+.portfolio h2{
+    text-align: center;
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.skills h3{
+    font-size: 14px;
+    line-height: 1.1;
+    padding-right: 40px;
+}
+
+section.skills ol{
+    background: #ffffff;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
+    padding: 42px 50px 10px;
+    margin-top: 30px;
+}
+
+.skills li{
+    float: left;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.skills li:nth-child(even){
+    float: right;
+}
+
+.progressBar{
+    height: 5px;
+    background: #fae1e1;
+    border-radius: 2px;
+    margin: 4px 0 36px;
+}
+
+.progressing{
+    height: 100%;
+    background: #e6686a;
+    width:70%;
+    border-radius: 2px;
+}
+
+section.portfolio {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  section.portfolio > nav{
+    text-align: center;
+  }
+  section.portfolio > nav > ol{
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+  }
+  section.portfolio > nav > ol > li{
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  section.portfolio > nav > ol > li:first-child{
+    margin-left: 0;
+  
+  }
+  section.portfolio > nav{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 32px;
+  }
+  section.portfolio > nav .bar{
+    height: 5px;
+    background: white;
+    margin-top: 5px;
+    margin-bottom: 28px;
+    border-radius: 2px;
+  }
+  section.portfolio > nav .bar-inner{
+    height: 100%;
+    background: #E6686A;
+    border-radius: 2px;
+    transition: all 0.5s;
+  }
+  section.portfolio > nav .bar.state-1 .bar-inner{
+    margin-left: 0;
+    width: 35px;
+  }
+  section.portfolio > nav .bar.state-2 .bar-inner{
+    margin-left: 70px;
+    width: 120px;
+  }
+  section.portfolio > nav .bar.state-3 .bar-inner{
+    margin-left: 230px;
+    width: 90px;
+  }
+
+  section.portfolio .jobs{
+    position: relative;
+  }
+  section.portfolio .jobs > .big,
+  section.portfolio .jobs > .small {
+    position: absolute;
+  }
